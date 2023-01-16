@@ -4,10 +4,193 @@
     box-sizing: border-box;
 }
 
-body {
-    font-size: 16px;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-.test {
-    color: #fff;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+.heading {
+    font-weight: 900;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+.tc-black {
+    color: #000000;
+}
+
+.tc-grey-light {
+    color: #BEC7CC;
+}
+
+.tc-grey {
+    color: #9D9FA2;
+}
+
+.header {
+    padding: 30px 20px;
+}
+
+.header .nav-menu .fa {
+    font-size: 26px;
+}
+
+.brand-logo {
+    color: #1AC8BC;
+    font-weight: 700;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.fa-phone {
+    margin-right: 20px;
+    transform: rotateY(180deg);
+}
+
+.card-wrapper {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.plan-details {
+    font-size: 18px;
+    gap: 4px;
+}
+
+.plan-validity {
+    font-size: 12px;
+    line-height: 1;
+    margin-top: 10px;
+}
+
+.plan-features {
+    letter-spacing: 1.5px;
+    font-size: 12px;
+}
+
+.plan-features-list {
+    font-size: 14px;
+}
+
+.plan-features::before { 
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 1px;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    background: #BEC7CC;
+}
+
+.plan-features::after { 
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 1px;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    background: #BEC7CC;
 }
