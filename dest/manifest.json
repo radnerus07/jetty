@@ -1,0 +1,5 @@
+{
+  "styles.css": "/dest/styles.css",
+  "styles.js": "/dest/styles.js",
+  "script.js": "/dest/script.js"
+}
