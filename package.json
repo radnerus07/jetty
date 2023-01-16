@@ -1,0 +1,19 @@
+{
+  "name": "jetty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radnerus07/jetty.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/radnerus07/jetty/issues"
+  },
+  "homepage": "https://github.com/radnerus07/jetty#readme"
+}
