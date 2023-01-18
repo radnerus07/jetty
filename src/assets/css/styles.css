@@ -197,11 +197,11 @@ body {
 .card {
     transition: transform 0.6s;
 }
-
-.card:hover .clr-chg-onhv {
-    color: #4340de;
-}
 .clr-chg-onhvmd {
+    color: #4340de;
+    
+}
+.card:hover .clr-chg-onhv {
     color: #4340de;
 }
 .card-trsm  {
