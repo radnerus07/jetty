@@ -215,3 +215,28 @@ body {
     letter-spacing: 2.5px;
     background-color:#4340de ;
 }
+
+.cover {
+    background-color: #f3fbfd;
+    height: calc(100vh - 81px);
+    position: fixed;
+    bottom: 0;
+    /* left: -100%; */
+    width: 100vw;
+
+}
+
+.line-break::before { 
+    content: "";
+    position: absolute;
+    width:85%;
+    height: 1px;
+    background: #BEC7CC;
+}
+
+@media (max-width: 962px) { 
+    .card-wrapper {
+      flex-direction: column;
+    }   
+  
+  }
