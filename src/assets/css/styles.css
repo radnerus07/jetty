@@ -194,3 +194,24 @@ body {
     transform: translate(0, -50%);
     background: #BEC7CC;
 }
+.card {
+    transition: transform 0.6s;
+}
+
+.card:hover .clr-chg-onhv {
+    color: #4340de;
+}
+.clr-chg-onhv {
+    color: #4340de;
+}
+.card-trsm  {
+    transform: scale(0.5);
+  }
+.card-label {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 2.5px;
+    background-color:#4340de ;
+}
