@@ -106,6 +106,9 @@ nav,
 section {
     display: block;
 }
+a {
+    text-decoration: none;
+}
 
 .heading {
     font-weight: 900;
@@ -218,11 +221,11 @@ body {
 
 .cover {
     background-color: #f3fbfd;
-    height: calc(100vh - 81px);
-    position: fixed;
-    bottom: 0;
-    /* left: -100%; */
+    position: absolute;
+    top: 0;
+    left: -150%;
     width: 100vw;
+    transition: transform .6s cubic-bezier(0.22, 0.91, 1, 1);
 
 }
 
@@ -233,10 +236,86 @@ body {
     height: 1px;
     background: #BEC7CC;
 }
+.datepicker {
+    position: relative;
+}
+.form-control {
+    border: 1px solid #eff4f7;
+    height: 48px;
+    padding: 0 5px 0 97px;
+    text-decoration: none;
+    width: 224px;
+}
+.label {
+    position: absolute;
+    top: 13px;
+    left: 15px;
+}
+input:focus {
+    outline: 0;
+    border: none;
+  }
+  form {
+    text-align: center;
+    width: 208px;
+    position: relative;
+  }
+  
+  .value-button:hover {
+    cursor: pointer;
+  }
+  
+  form #decrease {
+    margin-right: -4px;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  form #increase {
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  input#number {
+    height: 48px;
+    margin: 0;
+    padding: 0 5px 0 153px;
+    width: 224px;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+  .uparrow {
+    position: absolute;
+    top: 8px;
+    right: 0px;
+  }
+  .downarrow {
+    position: absolute;
+    bottom: 7px;
+    right: -4px;
+    padding: 0;
+  }
+  .display {
+    transform: translateX(150%);
+  }
 
 @media (max-width: 962px) { 
     .card-wrapper {
       flex-direction: column;
     }   
+    .dirc-chg {
+        flex-direction: column;
+        align-items: center;
+    }
   
   }
+  

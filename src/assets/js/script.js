@@ -1,5 +1,36 @@
-console.log('test');
+var button = document.getElementById('Plan')
+var clsBTn = document.getElementById('closebtn')
+var slide = document.getElementById('pgcover')
 
+
+button.addEventListener('click', () => {
+  slide.classList.add('display');
+  
+})
+
+clsBTn.addEventListener('click', () => {
+    slide.classList.remove('display');
+    
+  })
+  
+
+ 
+function increaseValue() {
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number').value = value;
+  }
+  
+  function decreaseValue() {
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value < 1 ? value = 1 : '';
+    value--;
+    document.getElementById('number').value = value;
+  }
+
+ 
 
 
 // var cardScale = document.getElementById('card1');

@@ -13,13 +13,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d079355e49.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="header">
         <div class="d-flex justify-content-between align-items-center">
-            <p class="tc-grey-light">Restart</p>
-            <a href="/" class="brand-logo">Jetty</a>
+            <nav class="nav-menu">
+                <a class="tc-grey-light" href="javascript:void(0)"><i class="fa-solid fa-chevron-left"></i></a>
+                <a class="tc-grey-light" href="javascript:void(0)">Restart</a>
+            </nav>
+                <a href="/" class="brand-logo">Jetty</a>
             <nav class="nav-menu">
                 <a class="tc-grey-light" href="javascript:void(0)"><i class="fa fa-phone" aria-hidden="true"></i></a>
                 <a class="tc-grey-light" href="javascript:void(0)"><i class="fa fa-commenting" aria-hidden="true"></i></a>
@@ -110,13 +114,43 @@
                     </div>
                 </li>
             </ul>
-            <a class="d-flex justify-content-center align-items-center" href="#0" style="text-decoration: none;"><button type="button" class="btn btn-primary btn-lg heading " style="height: 58px; width: 200px;border-radius: 50px; letter-spacing: 0.7px; font-size: 20px; background-color: #4340de;">choose plan</button></a>
+            <a class="d-flex justify-content-center align-items-center"  href="#0" style="text-decoration: none;"><button type="button" class="btn btn-primary btn-lg heading " style="height: 58px; width: 200px;border-radius: 50px; letter-spacing: 0.7px; font-size: 20px; background-color: #4340de;" id="Plan" >choose plan</button></a>
         </section>
     </main>
-   <div class="cover">
-    <div class="row">
+   <div class="cover" id="pgcover">
+    <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+        <nav class="nav-menu header" id="closebtn">
+            <a class="tc-grey-light" href="javascript:void(0)"><i class="fa-solid fa-chevron-left"></i></a>
+            <a class="tc-grey-light" href="javascript:void(0)">Customize your plan</a>
+        </nav>
+        <a href="/" class="brand-logo">Jetty</a>
+        <nav class="nav-menu">
+            <a class="tc-grey-light" href="javascript:void(0)"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            <a class="tc-grey-light" href="javascript:void(0)"><i class="fa fa-commenting" aria-hidden="true"></i></a>
+        </nav>
+    </div>
+   </div>
+    <div class="row mt-5">
         <div class="col-sm-8 container-fluid">
             <h1 class="heading h1 text-center mt-3 display-4">Customize your <br> jetty plan</h1>
+           <div class="d-flex justify-content-sm-evenly dirc-chg">
+            <form class="mb-4">
+                <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker" inline="true">
+                  <input placeholder="Select date" type="date" id="example" class="form-control">
+                  <label for="example" class="label tc-grey-light">Start</label>
+                </div>
+            </form>
+            <form class="mb-4">
+                <input type="text" id="number" value="$500" class="form-control" />
+                <label for="example" class="label tc-grey-light">Deductible <i class="fa-sharp fa-solid fa-circle-info"></i></label>
+                <div class="value-button uparrow" id="decrease" onclick="decreaseValue()" value="Decrease Value"><i class="fa-solid fa-chevron-up"></i></i></div>
+                <div class="value-button downarrow" id="increase" onclick="increaseValue()" value="Increase Value"><i class="fa-solid fa-chevron-down"></i></div>
+              </form>
+            </div>
+            <figure class="d-flex justify-content-center">
+            <img src="https://live.staticflickr.com/65535/52636616209_d35b2364d2.jpg" alt="">
+        </figure>
         </div>
         <div class="col-sm-4">
             <div class="card p-4 mt-4" id="card2" style="width: 18rem; margin: auto; box-shadow: 0 0 15px #bdc4cc;">
@@ -180,6 +214,7 @@
         </div>
       </div>
    </div>
+   <script src="./src/assets/js/script.js"></script>
 </body>
 
 </html>
